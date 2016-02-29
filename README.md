@@ -1,15 +1,14 @@
 #Sainsbury's test
 
 
-#####The system depends on an externnal library downloaded from 
-https://www.teamdev.com/jxbrowser
+#####The system depends on an externnal library downloaded from https://www.teamdev.com/jxbrowser
 
 
 #####install MAVEN
 
 
 #####install the external libraries in the maven repository:
-windows jars are provided in lib folder
+jars are provided in lib folder
 
     mvn install:install-file -Dfile=<path-to-file>\lib\jxbrowser-6.1.1.jar         -DgroupId=jxbrowser -DartifactId=jxbrowser-main    -Dversion=6.1.1 -Dpackaging=jar
     mvn install:install-file -Dfile=<path-to-file>\lib\jxbrowser-linux32-6.1.1.jar -DgroupId=jxbrowser -DartifactId=jxbrowser-linux32 -Dversion=6.1.1 -Dpackaging=jar
