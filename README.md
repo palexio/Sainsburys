@@ -8,8 +8,9 @@ The system depends on an externnal library downloaded from https://www.teamdev.c
 install MAVEN
 --------------
 
-install the external libraries in the maven repository(jars are provided in lib folder):
+install the external libraries in the maven repository:
 --------------
+windows jars are provided in lib folder
 
     mvn install:install-file -Dfile=<path-to-file>\lib\jxbrowser-6.1.1.jar         -DgroupId=jxbrowser -DartifactId=jxbrowser-main    -Dversion=6.1.1 -Dpackaging=jar
     mvn install:install-file -Dfile=<path-to-file>\lib\jxbrowser-linux32-6.1.1.jar -DgroupId=jxbrowser -DartifactId=jxbrowser-linux32 -Dversion=6.1.1 -Dpackaging=jar
@@ -18,11 +19,15 @@ install the external libraries in the maven repository(jars are provided in lib 
     mvn install:install-file -Dfile=<path-to-file>\lib\jxbrowser-win-6.1.1.jar     -DgroupId=jxbrowser -DartifactId=jxbrowser-win     -Dversion=6.1.1 -Dpackaging=jar
     mvn install:install-file -Dfile=<path-to-file>\lib\license.jar                 -DgroupId=jxbrowser -DartifactId=license           -Dversion=6.1.1 -Dpackaging=jar
 
-build the app with: mvn compile
+build the app with: 
 --------------
 
-run the tests with: mvn test
+    mvn compile
+	
+run the tests with: 
 --------------
+
+    mvn test
 
 run the console application with:
 --------------
